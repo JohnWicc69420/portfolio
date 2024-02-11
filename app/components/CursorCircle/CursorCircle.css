@@ -1,0 +1,10 @@
+.cursor-circle {
+  position: fixed;
+  width: 950px;
+  height: 950px;
+  border-radius: 50%;
+  background: radial-gradient(#46526c 0%, transparent 70%, #0f172a 100%);
+  mix-blend-mode: color-dodge;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
