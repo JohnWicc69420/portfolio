@@ -34,7 +34,9 @@ export default function About() {
           </span>{" "}
           Each project has been a testament to my commitment to excellence, with
           a focus on delivering precise and elegant solutions that leave a
-          lasting impression.{" "}
+          lasting impression. My dedication to continuous learning and
+          improvement drives me to stay updated with the latest technologies and
+          best practices in the field.{" "}
         </div>{" "}
         <div>
           {" "}

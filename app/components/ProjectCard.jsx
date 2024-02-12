@@ -16,7 +16,7 @@ export default function ProjectCard({
       <Link href={link} target="_blank">
         <div className="glass">
           <div
-            className={`p-5 cursor-pointer flex gap-4 ${
+            className={`p-5 cursor-pointer flex gap-4 transition-opacity ${
               isHovered ? "hovered" : ""
             } changeBrightness`}
           >

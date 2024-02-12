@@ -9,7 +9,7 @@ export default function Projects() {
       img: "/ss.png",
       title: "Performance Dashboard",
       desc: "A comprehensive dashboard application featuring various tools such as a kanban board, color picker, text editor, charts, and theme customization options including dark and light modes.",
-      link: "https://main--ecommerce-clothing-app64209.netlify.app/",
+      link: "https://dashboard-app-dun-eta.vercel.app/",
       tools: [
         "react.js",
         "next.js",
@@ -39,7 +39,7 @@ export default function Projects() {
       img: "/ss.png",
       title: "CRUD Blog Web App",
       desc: "A robust blog application built using MongoDB and Node.js, offering CRUD operations for managing blog posts, and supporting dark and light mode themes for enhanced readability.",
-      link: "https://main--ecommerce-clothing-app64209.netlify.app/",
+      link: "https://blog-app-tau-ten.vercel.app/",
       tools: [
         "react.js",
         "next.js",
@@ -55,6 +55,7 @@ export default function Projects() {
       title: "YouTube Clone Project",
       desc: "A project replicating the functionality of YouTube, allowing users to upload, view, and interact with videos, with features similar to the original platform, including user authentication and video management.",
       link: "https://main--ecommerce-clothing-app64209.netlify.app/",
+      // https://yt-clone-johnwicc64209.netlify.app/
       tools: [
         "react.js",
         "next.js",

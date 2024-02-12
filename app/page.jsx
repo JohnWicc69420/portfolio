@@ -13,18 +13,18 @@ export default function Home() {
         </span>
       </div>
       <div
-        className="dark:bg-[#0f172a] text-[#94A3B8] flex pt-16 items-start 
+        className="dark:bg-[#0f172a] text-[#94A3B8] flex items-start 
       justify-center gap-20 min-h-[100vh]"
       >
         <CursorCircle />
         <div className="sticky top-16 w-[450px] p-10">
           <Info />
         </div>
-        <div className=" flex flex-col gap-24 w-[600px]">
-          <div className="">
+        <div className=" flex flex-col w-[600px]">
+          <div id="about" className=" pt-[100px]">
             <About />
           </div>
-          <div>
+          <div className=" pt-20" id="projects">
             <Projects />
           </div>
         </div>

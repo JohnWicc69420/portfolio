@@ -18,45 +18,6 @@ body {
   --softTextColor: #a6a6a6;
 }
 
-.transition-pic {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 400ms;
-}
-
-.transition-card {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 400ms;
-}
-
-.hover\:scale-103:hover {
-  --tw-scale-x: 1.03;
-  --tw-scale-y: 1.03;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.alert {
-  animation: fadeInOut 3.1s ease-in-out;
-}
-
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -89,7 +50,6 @@ body {
 
 .hovered {
   opacity: 0.5;
-  transition: opacity 0.15s ease-in-out;
 }
 
 :hover.glass .changeBrightness {
@@ -98,7 +58,7 @@ body {
 }
 
 .changeWidth {
-  transition: all 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
 }
 
 :hover.infoLine {
@@ -106,5 +66,12 @@ body {
 }
 
 :hover.infoLine .changeWidth {
+  background-color: #e2e8f0;
   width: 70px;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: ease-in;
+  transition-duration: 150ms;
 }
