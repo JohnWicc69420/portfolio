@@ -1,11 +1,22 @@
 "use client";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { LuMail } from "react-icons/lu";
 
 export default function Info() {
   const data = [
     { id: 1, title: "ABOUT", scrollTo: "about" },
     { id: 2, title: "EXPERIENCE", scrollTo: "projects" },
     { id: 3, title: "PROJECTS", scrollTo: "projects" },
+  ];
+
+  const links = [
+    { title: "Github" },
+    { title: "LinkedIn" },
+    { title: "Résumé" },
   ];
 
   const [selectedSection, setSelectedSection] = useState(1);
@@ -24,7 +35,7 @@ export default function Info() {
         <div className="text-[#E2E8F0] text-5xl font-bold pb-1">
           Usman Tariq
         </div>
-        <div className="text-[#E2E8F0] text-xl">Front-End Web Developer</div>
+        <div className="text-[#E2E8F0] text-xl">Front-End Engineer</div>
         <div className="w-[260px]">
           "I engineer refined, vibrant, and precise user experiences."
         </div>
@@ -50,6 +61,20 @@ export default function Info() {
               ></div>
               {item.title}
             </span>
+          ))}
+        </div>
+        <div className=" pt-[350px] flex">
+          {links.map((item, index) => (
+            <div
+              key={index}
+              className="links text-sm font-semibold tracking-widest uppercase
+               flex items-center cursor-pointer gap-[6px] text-[#e2e8f0] py-2 pr-4"
+            >
+              <div className="flex items-center flex-col gap-[2px]">
+                {item.title}
+                <div className=" h-[2px] bg-[#e2e8f0] w-[2px] addWidth rounded-full"></div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -75,3 +75,20 @@ body {
   transition-timing-function: ease-in;
   transition-duration: 150ms;
 }
+
+.links {
+  transition: color 0.15s ease-in-out;
+}
+
+:hover.links {
+  color: #5adfcb;
+}
+
+.addWidth {
+  transition: all 0.1s ease-in-out;
+}
+
+:hover.links .addWidth {
+  width: 100%;
+  background-color: #5adfcb;
+}
