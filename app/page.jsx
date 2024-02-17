@@ -1,6 +1,7 @@
 "use client";
 import Info from "./components/Info";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import CursorCircle from "./components/CursorCircle/CursorCircle";
 import ThemeToggle from "./components/ThemeToggle";
 import Projects from "./components/Projects";
@@ -35,6 +36,9 @@ export default function Home() {
         <div className=" flex flex-col w-[600px]">
           <div id="about" className=" pt-[100px]">
             <About />
+          </div>
+          <div id="skills" className=" pt-[100px]">
+            <Skills />
           </div>
           <div id="projects" className=" pt-20">
             <Projects />

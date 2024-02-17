@@ -7,7 +7,7 @@ export default function About() {
           computers. My passion for{" "}
           <span
             className="text-[#E2E8F0] font-semibold transition-colors
-         hover:text-[#5ADFCB] "
+         hover:text-[#26b6a1] "
           >
             {" "}
             software engineering
@@ -16,7 +16,7 @@ export default function About() {
           possibilities it offers. This drive led me to explore{" "}
           <span
             className="text-[#E2E8F0] font-semibold transition-colors
-         hover:text-[#5ADFCB] "
+            hover:text-[#26b6a1] "
           >
             {" "}
             coding and web development{" "}
@@ -27,7 +27,7 @@ export default function About() {
           Throughout my journey, I've led the creation of{" "}
           <span
             className="text-[#E2E8F0] font-semibold transition-colors
-         hover:text-[#5ADFCB] "
+            hover:text-[#26b6a1] "
           >
             {" "}
             several impactful projects.
@@ -43,7 +43,7 @@ export default function About() {
           Beyond screens, I explore{" "}
           <span
             className="text-[#E2E8F0] font-semibold transition-colors
-         hover:text-[#5ADFCB] "
+            hover:text-[#26b6a1] "
           >
             {" "}
             nature, travel, and cherish moments.
