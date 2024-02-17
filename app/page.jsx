@@ -29,7 +29,7 @@ export default function Home() {
       justify-center gap-20 min-h-[100vh]"
       >
         <CursorCircle />
-        <div className="sticky top-16 w-[450px] p-10">
+        <div className="sticky top-0 w-[450px]">
           <Info />
         </div>
         <div className=" flex flex-col w-[600px]">
