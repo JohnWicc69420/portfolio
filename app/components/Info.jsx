@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Info() {
   const data = [
     { id: 1, title: "ABOUT", scrollTo: "about" },
-    { id: 2, title: "EXPERIENCE", scrollTo: "projects" },
+    { id: 2, title: "SKILLS", scrollTo: "projects" },
     { id: 3, title: "PROJECTS", scrollTo: "projects" },
   ];
 
