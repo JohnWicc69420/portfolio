@@ -92,3 +92,10 @@ body {
   width: 100%;
   background-color: #5adfcb;
 }
+
+.skill {
+  background-color: rgba(160, 176, 214, 0.06);
+  transition: background-color 0.1s ease-in-out;
+  border-radius: 12px;
+  border-top: 1px #35415b solid;
+}

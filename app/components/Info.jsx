@@ -9,13 +9,13 @@ import { LuMail } from "react-icons/lu";
 export default function Info() {
   const data = [
     { id: 1, title: "ABOUT", scrollTo: "about" },
-    { id: 2, title: "SKILLS", scrollTo: "projects" },
+    { id: 2, title: "SKILLS", scrollTo: "skills" },
     { id: 3, title: "PROJECTS", scrollTo: "projects" },
   ];
 
   const links = [
-    { title: "Github" },
-    { title: "LinkedIn" },
+    { title: "Github", icon: <FaGithub /> },
+    { title: "LinkedIn", icon: <FaLinkedin /> },
     { title: "Résumé" },
   ];
 
@@ -70,7 +70,7 @@ export default function Info() {
             <div
               key={index}
               className="links text-sm font-semibold tracking-widest uppercase
-               flex items-center cursor-pointer gap-[6px] text-[#e2e8f0] py-2 pr-4"
+               flex items-center cursor-pointer gap-[6px] py-2 pr-4"
             >
               <div className="flex items-center flex-col gap-[2px]">
                 {item.title}
