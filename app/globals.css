@@ -48,6 +48,11 @@ body {
   transition: transform 0.1s ease-in-out;
 }
 
+:hover.links .changePos {
+  transform: translate(4px, -4px);
+  transition: transform 0.1s ease-in-out;
+}
+
 .hovered {
   opacity: 0.5;
 }
@@ -96,6 +101,15 @@ body {
 .skill {
   background-color: rgba(160, 176, 214, 0.06);
   transition: background-color 0.1s ease-in-out;
+  border-radius: 12px;
+  border-top: 1px #35415b solid;
+}
+.skillBgColor {
+  transition: background-color 0.1s ease-in-out;
+}
+:hover.skillsDiv .skillBgColor {
+  background-color: #122b39;
+  color: #5adfcb;
   border-radius: 12px;
   border-top: 1px #35415b solid;
 }

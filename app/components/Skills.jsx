@@ -49,7 +49,6 @@ export default function Skills() {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
-  console.table(skills);
 
   return (
     <div className=" flex flex-col gap-6">
@@ -60,19 +59,25 @@ export default function Skills() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="glass">
+          <div className="glass skillsDiv">
             <div
               className={`py-5 pl-3 pr-5 cursor-pointer flex gap-4 transition-opacity ${
                 isHovered ? "hovered" : ""
               } changeBrightness`}
             >
-              <div className="right flex items-start gap-2 text-sm">
-                <p className="max-w-[150px] min-w-[150px] opacity-75 line-clamp-2">
+              <div className="right flex items-start  gap-2 text-sm">
+                <p
+                  className="max-w-[150px] min-w-[150px] opacity-75 line-clamp-2
+                 uppercase font-semibold text-xs leading-4"
+                >
                   {item.title}
                 </p>
-                <div className="flex gap-2 flex-wrap">
+                <div className="flex flex-wrap">
                   {item.skill.map((skill, index) => (
-                    <p className="px-2 py-1 skill" key={index}>
+                    <p
+                      className="px-2 mx-1 mb-3 py-1 skill skillBgColor text-xs"
+                      key={index}
+                    >
                       {skill}
                     </p>
                   ))}

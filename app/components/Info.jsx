@@ -1,10 +1,9 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { LuMail } from "react-icons/lu";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function Info() {
   const data = [
@@ -14,9 +13,17 @@ export default function Info() {
   ];
 
   const links = [
-    { title: "Github", icon: <FaGithub /> },
-    { title: "LinkedIn", icon: <FaLinkedin /> },
-    { title: "Résumé" },
+    {
+      title: "Github",
+      icon: <FaGithub />,
+      link: "https://github.com/JohnWicc69420",
+    },
+    {
+      title: "LinkedIn",
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/usman-tariq-82b560152/",
+    },
+    { title: "Résumé", link: "https://github.com/JohnWicc69420" },
   ];
 
   const [selectedSection, setSelectedSection] = useState(1);
@@ -67,16 +74,28 @@ export default function Info() {
         </div>
         <div className=" flex pb-16">
           {links.map((item, index) => (
-            <div
-              key={index}
-              className="links text-sm font-semibold tracking-widest uppercase
+            <Link href={item?.link} target="_blank">
+              <div
+                key={index}
+                className="links text-sm font-semibold tracking-widest uppercase
                flex items-center cursor-pointer gap-[6px] py-2 pr-4"
-            >
-              <div className="flex items-center flex-col gap-[2px]">
-                {item.title}
-                <div className=" h-[2px] bg-[#e2e8f0] w-[2px] addWidth rounded-full"></div>
+              >
+                <div className="flex items-center gap-[2px]">
+                  <div className="">
+                    <div className="flex items-center gap-[6px]">
+                      {item?.icon}
+                      {item.title}
+                      {!item.icon && (
+                        <span className=" ml-[-6px] changePos text-lg">
+                          <MdOutlineArrowOutward />
+                        </span>
+                      )}
+                    </div>
+                    <div className=" h-[2px] bg-[#e2e8f0] w-0 addWidth rounded-full"></div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
