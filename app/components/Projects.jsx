@@ -90,7 +90,6 @@ export default function Projects() {
         "React Player",
         "React Redux",
         "React Router DOM",
-        "React Scripts",
         "React Scroll",
         "Swiper",
         "SASS",
@@ -111,10 +110,10 @@ export default function Projects() {
 
   return (
     <>
-      <div className=" pb-10">
-        <h1 className=" uppercase hidden text-[#E2E8F0] text-base font-bold">
+      <div className=" pb-10 ">
+        <div className="xl:hidden block text-[#E2E8F0] px-3 uppercase font-semibold text-base tracking-widest py-6">
           PROJECTS
-        </h1>
+        </div>
         <div
           className={`flex flex-col gap-6 `}
           onMouseEnter={handleMouseEnter}

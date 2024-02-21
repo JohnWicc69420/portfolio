@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -27,27 +27,63 @@ export default function Info() {
   ];
 
   const [selectedSection, setSelectedSection] = useState(1);
+
   const handleSelectedSection = (id) => {
     setSelectedSection(id);
   };
 
+  const [isScrolling, setIsScrolling] = useState(false);
+
   const scrollToProjects = (id) => {
+    setIsScrolling(true);
     const projectsSection = document.getElementById(id);
     projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => {
+      setIsScrolling(false);
+    }, 250);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!isScrolling) {
+        const sections = data.map(
+          (section) => document.getElementById(section.scrollTo).offsetTop
+        );
+        const scrollPosition = window.scrollY;
+        const closestSectionIndex = sections.reduce(
+          (prevIndex, currPosition, index) => {
+            const prevDistance = Math.abs(sections[prevIndex] - scrollPosition);
+            const currDistance = Math.abs(currPosition - scrollPosition);
+            return currDistance < prevDistance ? index : prevIndex;
+          },
+          0
+        );
+
+        setSelectedSection(data[closestSectionIndex].id);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      if (!isScrolling) {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [isScrolling]);
 
   return (
     <>
-      <div className="flex flex-col justify-between h-screen px-10 pt-[100px]">
+      <div className="flex flex-col xl:justify-between xl:h-screen xl:px-10 px-3 pt-[100px]">
         <div className="flex gap-3 flex-col items-start">
           <div className="text-[#E2E8F0] text-5xl font-bold pb-1">
             Usman Tariq
           </div>
           <div className="text-[#E2E8F0] text-xl">Front-End Engineer</div>
-          <div className="w-[260px]">
+          <div className="xl:w-[260px]">
             "I engineer refined, vibrant, and precise user experiences."
           </div>
-          <div className="flex flex-col uppercase gap-2 pt-14 text-xs font-semibold tracking-widest">
+          <div className=" hidden xl:flex flex-col uppercase gap-2 pt-14 text-xs font-semibold tracking-widest">
             {" "}
             {data.map((item, index) => (
               <span
@@ -72,16 +108,16 @@ export default function Info() {
             ))}
           </div>
         </div>
-        <div className=" flex pb-16">
+        <div className=" flex xl:flex-row flex-col xl:pb-16 xl:pt-0 pt-8">
           {links.map((item, index) => (
             <Link href={item?.link} target="_blank">
               <div
                 key={index}
                 className="links text-sm font-semibold tracking-widest uppercase
-               flex items-center cursor-pointer gap-[6px] py-2 pr-4"
+               flex items-center cursor-pointer gap-[6px] xl:py-2 py-1 pr-4"
               >
                 <div className="flex items-center gap-[2px]">
-                  <div className="">
+                  <div className="flex flex-col items-center">
                     <div className="flex items-center gap-[6px]">
                       {item?.icon}
                       {item.title}

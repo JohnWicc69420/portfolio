@@ -1,7 +1,10 @@
 export default function About() {
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 px-3 w-full">
+        <div className="xl:hidden block text-[#E2E8F0] uppercase font-semibold text-base tracking-widest py-6">
+          ABOUT
+        </div>
         <div>
           From an early age, I've been captivated by the world of technology and
           computers. My passion for{" "}

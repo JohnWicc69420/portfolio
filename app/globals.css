@@ -5,6 +5,9 @@
 body {
   user-select: none;
 }
+html {
+  scroll-behavior: auto;
+}
 
 :root {
   --bg: white;
@@ -63,7 +66,7 @@ body {
 }
 
 .changeWidth {
-  transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in;
 }
 
 :hover.infoLine {

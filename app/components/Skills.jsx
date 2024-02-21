@@ -52,6 +52,9 @@ export default function Skills() {
 
   return (
     <div className=" flex flex-col gap-6">
+      <div className="xl:hidden block text-[#E2E8F0] px-3 uppercase font-semibold text-base tracking-widest">
+        SKILLS
+      </div>
       {skills.map((item, index) => (
         <div
           key={index}
