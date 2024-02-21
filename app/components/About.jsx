@@ -6,8 +6,8 @@ export default function About() {
           ABOUT
         </div>
         <div>
-          From an early age, I've been captivated by the world of technology and
-          computers. My passion for{" "}
+          From an early age, I&apos;ve been captivated by the world of
+          technology and computers. My passion for{" "}
           <span
             className="text-[#E2E8F0] font-semibold transition-colors
          hover:text-[#26b6a1] "
@@ -27,7 +27,7 @@ export default function About() {
           deeply.
         </div>
         <div>
-          Throughout my journey, I've led the creation of{" "}
+          Throughout my journey, I&apos;ve led the creation of{" "}
           <span
             className="text-[#E2E8F0] font-semibold transition-colors
             hover:text-[#26b6a1] "

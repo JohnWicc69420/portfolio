@@ -81,7 +81,8 @@ export default function Info() {
           </div>
           <div className="text-[#E2E8F0] text-xl">Front-End Engineer</div>
           <div className="xl:w-[260px]">
-            "I engineer refined, vibrant, and precise user experiences."
+            &quot;I engineer refined, vibrant, and precise user
+            experiences.&quot;
           </div>
           <div className=" hidden xl:flex flex-col uppercase gap-2 pt-14 text-xs font-semibold tracking-widest">
             {" "}
@@ -110,7 +111,7 @@ export default function Info() {
         </div>
         <div className=" flex xl:flex-row flex-col xl:pb-16 xl:pt-0 pt-8">
           {links.map((item, index) => (
-            <Link href={item?.link} target="_blank">
+            <Link key={index} href={item?.link} target="_blank">
               <div
                 key={index}
                 className="links text-sm font-semibold tracking-widest uppercase
