@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   const data = [
     {
-      img: "/ss.png",
+      img: "/dashboard.png",
       title: "Performance Dashboard",
       desc: "A comprehensive dashboard application featuring various tools such as a kanban board, color picker, text editor, charts, and theme customization options including dark and light modes.",
       link: "https://dashboard-app-dun-eta.vercel.app/",
@@ -30,7 +30,7 @@ export default function Projects() {
       ],
     },
     {
-      img: "/ss.png",
+      img: "/e-commerce.png",
       title: "E-commerce Web App",
       desc: "An intuitive e-commerce platform with essential functionalities including a fully functional shopping cart, CRUD operations for products, and advanced sorting and filtering options.",
       link: "https://main--ecommerce-clothing-app64209.netlify.app/",
@@ -48,7 +48,7 @@ export default function Projects() {
       ],
     },
     {
-      img: "/ss.png",
+      img: "/blog.png",
       title: "CRUD Blog Web App",
       desc: "A robust blog application built using MongoDB and Node.js, offering CRUD operations for managing blog posts, and supporting dark and light mode themes for enhanced readability.",
       link: "https://blog-app-tau-ten.vercel.app/",
@@ -70,11 +70,10 @@ export default function Projects() {
       ],
     },
     {
-      img: "/ss.png",
+      img: "/yt.png",
       title: "YouTube Clone Project",
       desc: "A project replicating the functionality of YouTube, allowing users to upload, view, and interact with videos, with features similar to the original platform, including user authentication and video management.",
-      link: "https://main--ecommerce-clothing-app64209.netlify.app/",
-      // https://yt-clone-johnwicc64209.netlify.app/
+      link: "https://main--yt-clone-johnwicc64209.netlify.app/",
       tools: [
         "HTML",
         "CSS",

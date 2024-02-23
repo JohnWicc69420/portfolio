@@ -22,7 +22,7 @@ export default function ProjectCard({
           >
             <div className="left pt-1 min-w-[150px] max-w-[150px] h-full">
               <Image
-                className=" w-full "
+                className=" w-full shadow-sm pt-[2px]"
                 src={img}
                 width={2000}
                 height={2000}
