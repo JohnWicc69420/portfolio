@@ -25,7 +25,7 @@ export default function Info() {
     },
     {
       title: "Résumé",
-      link: "https://drive.google.com/file/d/1N3kRHxyfEk_oAum9zE1bWXyVfjSp5bLY/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/1zGs4MmGPBr29KER91ATiPYhLX5a0aRjk/view?usp=sharing",
     },
   ];
 
